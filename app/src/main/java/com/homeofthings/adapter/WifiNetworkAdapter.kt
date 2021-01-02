@@ -22,6 +22,8 @@ class WifiNetworkAdapter(private val wifiNetworks: List<WifiNetwork>) : Recycler
         val bssidTextView: TextView = itemView.findViewById<TextView>(R.id.bssid)
         val ipAddressTextView: TextView = itemView.findViewById<TextView>(R.id.ipAddress)
         val macAddressTextView: TextView = itemView.findViewById<TextView>(R.id.macAddress)
+        val disconnectedHeaderTextView: TextView = itemView.findViewById<TextView>(R.id.disconnected_header)
+        val connectedHeaderTextView: TextView = itemView.findViewById<TextView>(R.id.connected_header)
     }
 
     // ... constructor and member variables
@@ -47,6 +49,15 @@ class WifiNetworkAdapter(private val wifiNetworks: List<WifiNetwork>) : Recycler
         viewHolder.bssidTextView.text = wifiNetwork.bssid
         viewHolder.ipAddressTextView.text = wifiNetwork.ipAddress
         viewHolder.macAddressTextView.text = wifiNetwork.macAddress
+
+        // Sets the connected property or not. (Shows the 'connected' text)
+        if (wifiNetwork.current) {
+            viewHolder.connectedHeaderTextView.visibility = View.VISIBLE
+            viewHolder.disconnectedHeaderTextView.visibility = View.GONE
+        } else {
+            viewHolder.connectedHeaderTextView.visibility = View.GONE
+            viewHolder.disconnectedHeaderTextView.visibility = View.VISIBLE
+        }
     }
 
     // Returns the total count of items in the list

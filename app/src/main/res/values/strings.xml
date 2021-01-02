@@ -16,4 +16,6 @@
     <string name="ipAddress_label">IP Address</string>
     <string name="macAddress_label">MAC Address</string>
     <string name="no_value">N/A</string>
+    <string name="connected_header">Connected</string>
+    <string name="disconnected_header">Disconnected</string>
 </resources>

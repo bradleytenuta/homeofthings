@@ -5,4 +5,7 @@ class WifiNetwork(
     val ipAddress: String,
     val macAddress: String,
     val ssid: String
-)
+) {
+    var current: Boolean = false
+
+}

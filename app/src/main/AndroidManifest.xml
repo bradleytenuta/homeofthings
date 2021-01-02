@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <!-- Permission required to get WIFI information -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <!-- Permission required to get WIFI information -->
@@ -39,5 +40,12 @@
         <!-- Other Activities are listed here -->
         <activity android:name="com.homeofthings.PermissionActivity"></activity>
         <activity android:name="com.homeofthings.MainActivity"></activity>
+
+        <!-- Creates a listener for when the wifi network changes -->
+        <receiver android:name="com.homeofthings.receiver.WifiNetworkReceiver" >
+            <intent-filter android:priority="100">
+                <action android:name="WifiManager.NETWORK_STATE_CHANGED_ACTION" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>

@@ -8,6 +8,26 @@
     android:layout_marginBottom="10dp"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/connected_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_wifi_24"
+        android:text="@string/connected_header"
+        android:textAppearance="@style/TextAppearance.Small"
+        android:textColor="#dd5100"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/disconnected_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_wifi_off_24"
+        android:text="@string/disconnected_header"
+        android:textAppearance="@style/TextAppearance.Small"
+        android:textColor="#757575"
+        android:visibility="gone" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
