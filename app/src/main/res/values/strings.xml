@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Home of Things</string>
+
+    <!-- Permission Activity -->
+    <string name="permission_message">Home of Things requires certain permissions in order to be able to run correctly.</string>
+    <string name="permission_button">I approve</string>
+
+    <!-- Main Activity -->
+    <string name="logo_description">Home of Things - Logo</string>
+    <string name="networks">Networks</string>
+    <string name="add_network_button">Add a Wifi Network</string>
+
+    <!-- Item - Wifi Network-->
+    <string name="ssid_label">SSID</string>
+    <string name="bssid_label">BSSID</string>
+    <string name="ipAddress_label">IP Address</string>
+    <string name="macAddress_label">MAC Address</string>
+    <string name="no_value">N/A</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme Colors -->
+    <color name="primary">#dd2c00</color>
+    <color name="primary_dark">#a30000</color>
+    <color name="secondary">#dd5100</color>
+    <color name="secondary_dark">#a41c00</color>
+
+    <!-- Text Colors -->
+    <color name="text_color_primary">#ffffff</color>
+    <color name="text_color_secondary">#FF0000</color>
+
+    <!-- Other Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

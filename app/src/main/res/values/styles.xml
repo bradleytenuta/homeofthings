@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The main theme of the application -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Font Family -->
+        <item name="android:fontFamily">@font/roboto</item>
+
+        <!-- Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_dark</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:textColorSecondary">@color/text_color_secondary</item>
+    </style>
+
+    <!-- Theme used for the Splash screen that appears before the home screen. -->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <!--
+        The two text appearances styles below should be used when customising TextView's.
+        It will save time and removes the need to add each property individually.
+    -->
+    <!-- Text Appearance for Headline text. -->
+    <style name="TextAppearance.Headline" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Text Appearance for regular text. -->
+    <style name="TextAppearance.Small" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>
